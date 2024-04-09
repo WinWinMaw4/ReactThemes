@@ -1,8 +1,8 @@
-import {Provider} from "react-redux"
 import './App.css'
+import ThemeSwitcher from "./components/ui/ThemeSwitcher"
 
 function App() {
-
+  // const {theme} = useSelector()
   return (
     <>
       
@@ -10,6 +10,8 @@ function App() {
    <div className="box px-7 py-2 rounded">
      This is a Box 
     </div>
+
+    <ThemeSwitcher theme={"light"} />
     
    <h1 className="text-5xl font-bold underline title">
       Hello Themes!
