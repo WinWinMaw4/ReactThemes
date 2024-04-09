@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#App{
+  background-color: var(--background-color);
+}
+
+.title{
+  color: var(--primary-text-color);
+}
+.box{
+  background-color: var(--foreground-color);
+  color: var(--secondary-text-color);
+}
