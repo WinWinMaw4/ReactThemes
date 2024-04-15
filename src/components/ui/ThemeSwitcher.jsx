@@ -6,15 +6,15 @@ const ThemeSwitcher = ({ theme }) => {
     const dispatch = useDispatch()
 
   const toggleTheme = () => {
-    const newTheme = theme === 'dark' ? 'dark' : 'light';
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
     dispatch(setTheme(newTheme))
     console.log(newTheme)
   };
 
 
   return (
-    <button onClick={toggleTheme}>
-      Switch to {theme === 'light' ? 'dark' : 'light'} theme
+    <button onClick={toggleTheme} className='primary-text-color py-2 px-5 border '>
+      Go To {theme === 'dark' ? 'light' : 'dark'} 
     </button>
   );
 };
