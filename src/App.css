@@ -2,15 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-#App{
-  background-color: var(--background-color);
-}
-
-.title{
-  color: var(--primary-text-color);
-}
-.box{
-  background-color: var(--foreground-color);
-  color: var(--secondary-text-color);
+@layer base {
+  :root {
+/* For hsl(198deg 93% 60% / <alpha-value>) */
+--color-primary: 14 70 163;
+--color-secondary: 198deg 93% 60%;
+    /* ... */
+  }
 }

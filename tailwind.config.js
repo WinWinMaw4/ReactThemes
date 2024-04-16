@@ -6,10 +6,14 @@ export default {
   ],
   darkMode:"class",
   theme: {
-    
+    colors: {
+      primary: 'rgb(var(--color-primary) / <alpha-value>)',
+      secondary: 'hsl(var(--color-secondary) / <alpha-value>)',
+    },
     extend: {
       colors: {
-        primary: {
+        extraColor: {
+          0:"#fff",
           50: "#FA8484",
           100: "#FA7878",
           200: "#FA6A6A",

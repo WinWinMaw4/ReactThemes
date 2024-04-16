@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       
-   <div  className=" min-h-screen flex flex-col justify-center items-center bg-green-400 dark:bg-gray-700">
+   <div  className=" min-h-screen flex flex-col justify-center items-center bg-secondary dark:bg-primarygit  ">
   <div className=" p-10 bg-blue-300 dark:bg-black border">
   <div className="px-7 py-2 rounded text-pink-600 dark:text-yellow-400 bg-pink-200 dark:bg-yellow-200 cursor-pointer" onClick={handleThemeSwitcher}>
      This is a Box 
@@ -37,7 +37,7 @@ function App() {
 
     {/* <ThemeSwitcher /> */}
     
-   <h1 className="text-5xl  font-bold underline text-primary-50 dark:text-primary-400">
+   <h1 className="text-5xl  font-bold underline text-primary dark:text-secondary ">
       Hello Themes!
     </h1>
   </div>
