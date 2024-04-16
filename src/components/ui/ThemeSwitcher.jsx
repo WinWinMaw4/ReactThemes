@@ -1,14 +1,16 @@
 // ThemeSwitcher.js
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setTheme } from '../../features/slices/themesSlice';
 
-const ThemeSwitcher = ({ theme }) => {
+
+const ThemeSwitcher = () => {
     const dispatch = useDispatch()
+    const theme = useSelector(state => state.switchTheme.theme);
+
 
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     dispatch(setTheme(newTheme))
-    console.log(newTheme)
   };
 
 
