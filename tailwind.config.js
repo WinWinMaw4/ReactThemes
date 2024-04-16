@@ -6,15 +6,23 @@ export default {
   ],
   darkMode:"class",
   theme: {
+    
     extend: {
-      // colors: {
-      //   // Define custom colors here based on your theme configuration
-      //   primary: 'var(--theme-primary-color)',
-      //   secondary: 'var(--theme-secondary-color)',
-      //   text: 'var(--theme-text-color)',
-      //   background: 'var(--theme-background-color)',
-      //   border: 'var(--theme-border-color)',
-      // },
+      colors: {
+        primary: {
+          50: "#FA8484",
+          100: "#FA7878",
+          200: "#FA6A6A",
+          300: "#FA5B5B",
+          400: "#F94B4B",
+          500: "#E24444",
+          600: "#CD3E3E",
+          700: "#BA3838",
+          800: "#A93333",
+          900: "#9A2E2E",
+          DEFAULT: "#F94B4B",
+        },
+      },
     },
   },
   plugins: [],

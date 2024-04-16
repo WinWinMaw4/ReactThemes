@@ -1,4 +1,3 @@
-import { useSelector } from 'react-redux';
 import './App.css'
 import { useEffect, useState } from 'react';
 
@@ -38,7 +37,7 @@ function App() {
 
     {/* <ThemeSwitcher /> */}
     
-   <h1 className="text-5xl font-bold underline text-pink-600 dark:text-yellow-400">
+   <h1 className="text-5xl  font-bold underline text-primary-50 dark:text-primary-400">
       Hello Themes!
     </h1>
   </div>
