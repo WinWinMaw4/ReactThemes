@@ -1,22 +1,20 @@
 import { useSelector } from 'react-redux';
 import './App.css'
-import ThemeSwitcher from "./components/ui/ThemeSwitcher"
 import { useEffect, useState } from 'react';
 
 function App() {
-  // const theme = useSelector(state => state.switchTheme.theme);
+  const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  const [theme, setTheme] = useState(null);
+  const savedTheme = localStorage.getItem('theme') || (prefersDarkMode ? 'dark' : 'light');
 
-  useEffect(()=>{
-    if(window.matchMedia(`(prefers-color-scheme: dark)`).matches){
-      setTheme('dark');
-    }else{
-      setTheme('light')
-    }
-  },[])
+
+  const [theme, setTheme] = useState(savedTheme);
 
   useEffect(() => {
+
+    localStorage.setItem('theme', theme);
+    console.log("localstorea theme",theme)
+
   if(theme === "dark"){
     document.documentElement.classList.add("dark");
   }else{
