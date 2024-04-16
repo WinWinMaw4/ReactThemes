@@ -4,8 +4,13 @@
 
 @layer base {
   :root {
-/* For hsl(198deg 93% 60% / <alpha-value>) */
---color-primary: 14 70 163;
---color-secondary: 198deg 93% 60%;
+    --color-foreground: 26 18 11;
+    --color-foreground-secondary: 49 54 63;
+
+  }
+  :root.dark {
+    --color-foreground: 229 229 203;
+    --color-foreground-secondary: 180 180 184;
+
   }
 }

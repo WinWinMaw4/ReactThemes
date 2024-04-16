@@ -8,7 +8,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        extraColor: {
+        foreground: {
+					DEFAULT: "rgb(var(--color-foreground) / <alpha-value>)",
+					secondary:
+						"rgb(var(--color-foreground-secondary) / <alpha-value>)",
+				},
+
+
+        redColor: {
           0:"#fff",
           50: "#FA8484",
           100: "#FA7878",
